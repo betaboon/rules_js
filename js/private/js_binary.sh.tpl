@@ -17,6 +17,9 @@ set -o pipefail -o errexit -o nounset
 # ==============================================================================
 # Prepare stdout capture, stderr capture && logging
 # ==============================================================================
+echo "HERE"
+echo "PATH: $PATH"
+echo "THERE"
 
 if [ "${JS_BINARY__STDOUT_OUTPUT_FILE:-}" ] || [ "${JS_BINARY__SILENT_ON_SUCCESS:-}" ]; then
     STDOUT_CAPTURE=$(mktemp)
